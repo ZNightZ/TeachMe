@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>TeachMe</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.4.1.min.js"></script>
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+
+
+<style>
+  
+        .bg {
+          /* The image used */
+          background-image: url(asset/14479.jpg);
+        
+          /* Full height */
+          height: 100%; 
+          filter: grayscale(40%);
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          z-index: -9;
+        }
+        .fontinfo{
+            color:white;
+            padding-left:20px;
+            font-size:18px;
+            text-shadow: 1px 2px #000000;
+        }
+        .navcolor{
+            background-color:gray;
+            background:transparent;
+        }
+        .fint{
+            float:right;
+            color:white;
+            padding-right:10px;
+            font-size:18px;
+            text-shadow: 1px 2px #000000;
+            margin-left:40px;
+        }
+        .logo{
+	    width:100%;
+        }
+        .logo-wrapper{
+         position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 20%;
+        }
+        .setbox{
+            margin-top:300px;
+            margin-left:300px;
+            margin-right:auto;
+        }
+        .mainfont{
+            font-size:30px;
+            color:white;
+            text-shadow: 1px 2px #000000;
+        }
+        .destex{
+            margin-top:25px;
+            margin-left:300px;
+            margin-right:auto;
+            text-shadow: 1px 2px #000000;
+        }
+        .buybtn{
+            text-align: center;
+            margin-top:40px;
+            border-radius: 10px;
+        }
+        .module-border-wrap {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top:40px;
+            border-radius: 30px;
+          max-width: 120px;
+          padding: 1rem;
+          position: relative;
+          background: linear-gradient(to right, red, purple);
+          padding: 5px;
+        }
+        
+        .module {
+          background: #222;
+          color: white;
+          padding: 10px;
+          border-radius: 30px;
+        }
+        .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+  display: none;
+  position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+        </style>
+        
+        </head>
+        
+        <body>
+         <div class="logo-wrapper">
+            <img src="asset/TeachMe.jpg" class="logo" alt="">
+        </div> 
+        <div class="bg">
+                <div class="container navcolor">
+                        <div class="topnav">
+                          <a href="#" class="fontinfo">TeachMe@gmail.com</a>
+                          <a href="#" class="fontinfo">062-5080689</a>
+                          <a href="home.php" class="fint">Logout</a>
+                          <a href="#" class="fint">Hello Mr. A</a>
+                        </div>
+                </div>	
+                <div class="fint" style="margin-top:15px;margin-right:20px;">
+                        <div class="dropdown ">
+                                <span style="color:white;font-size:15px;padding:10px">Course</span>
+                                <div class="dropdown-content">
+                                <a href="Logining.php" style="color:white;">Math1</a><br>
+                                <a href="Logining.php" style="color:white;">Coding</a>		
+                                </div>
+                        </div>
+                        <div class="dropdown ">
+                                <span style="color:white;font-size:15px;padding:10px">Event</span>
+                                <div class="dropdown-content">
+                                <a href="index.php" style="color:white;">50% off</a><br>
+                                </div>
+                        </div>
+                        <div class="dropdown ">
+                                <span style="color:white;font-size:15px;padding:10px">For Teacher</span>
+                                <div class="dropdown-content">
+                                <a href="index.php" style="color:white;">Streaming</a><br>
+                                <a href="index.php" style="color:white;">Schdule</a><br>
+                                </div>
+                        </div>
+                        <div class="dropdown ">
+                                <span style="color:white;font-size:15px;padding:10px">Contact</span>
+                                <div class="dropdown-content">
+                                <a href="index.php" style="color:white;">Tell xxxx</a><br>
+                                <a href="index.php" style="color:white;"></a><br>
+                                </div>
+                        </div>
+
+                </div>
+                
+                <div class="setbox">
+                    <label for="" class="mainfont" >TeachMe is the best</label> 
+                    <label for="" style="color:white;font-size:40px;font-family: Poppins-Regular;text-shadow: 2px 2px #000000;">Education</label>
+                </div>
+                <div class="destex">
+                    <label for="" style="color:white;font-size:12;">Teachme we care about your learning and teaching and we proud to be a part of your</label>
+                </div>
+                <div class="module-border-wrap"><div class="module">
+                    <a href="Logining.php" style="color:white;"> Buy now </a>	
+                </div></div>
+        </div>
+        
+        
+
+
+
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
